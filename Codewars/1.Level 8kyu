@@ -1,0 +1,22 @@
+1. Even or Odd
+//https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
+
+function even_or_odd(number) {
+    let e = "Even";
+    let o = "Odd";
+    let a = number % 2;
+    if (a == 0){
+        return e;
+    } else {
+        return o;
+    }
+}
+
+2.Enumerable Magic #25 - Take the First N Elements
+//https://www.codewars.com/kata/545afd0761aa4c3055001386/train/javascript
+
+function take(arr, n) {
+    let x = arr.slice(0,n);
+    return x;
+}
+
