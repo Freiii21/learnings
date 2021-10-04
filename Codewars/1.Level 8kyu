@@ -1,6 +1,5 @@
-1. Even or Odd
+//1. Even or Odd
 //https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
-
 function even_or_odd(number) {
     let e = "Even";
     let o = "Odd";
@@ -12,11 +11,27 @@ function even_or_odd(number) {
     }
 }
 
-2.Enumerable Magic #25 - Take the First N Elements
+//2.Enumerable Magic #25 - Take the First N Elements
 //https://www.codewars.com/kata/545afd0761aa4c3055001386/train/javascript
-
 function take(arr, n) {
     let x = arr.slice(0,n);
     return x;
 }
 
+//3.Simple multiplication
+//https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript
+function simpleMultiplication(number) {
+    if(number%2 == 0){
+        number = number * 8;
+    } else {
+        number = number * 9;
+    }
+    return number;
+}
+
+//4.Function 1 - hello world
+//https://www.codewars.com/kata/523b4ff7adca849afe000035/train/javascript
+function greet(){
+    var a = "hello world!";
+    return a;
+}
