@@ -56,5 +56,7 @@ function defineSuit(card) {
         return "hearts";
     } else if (su == "♠"){
         return "spades";
+    } else {
+        return "unknown card type";
     }
 }
