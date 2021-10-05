@@ -35,3 +35,26 @@ function greet(){
     var a = "hello world!";
     return a;
 }
+
+//5.Function 2 - squaring an argument
+//https://www.codewars.com/kata/523b623152af8a30c6000027/train/javascript
+function square(edge){
+    var sq = edge * edge;
+    return sq;
+}
+
+//6.Define a card suit
+//https://www.codewars.com/kata/5a360620f28b82a711000047/train/javascript
+function defineSuit(card) {
+    var le = (card.length-1);
+    var su = card[le];
+    if (su == "♣"){
+        return "clubs";
+    } else if (su == "♦"){
+        return "diamonds";
+    } else if (su == "♥"){
+        return "hearts";
+    } else if (su == "♠"){
+        return "spades";
+    }
+}
