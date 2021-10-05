@@ -60,3 +60,17 @@ function defineSuit(card) {
         return "unknown card type";
     }
 }
+
+//7.Grasshopper - Debug sayHello
+//https://www.codewars.com/kata/5625618b1fe21ab49f00001f/train/javascript
+function sayHello(name) {
+    return 'Hello,'+' '+name
+}
+
+//8.Convert a Boolean to a String
+//https://www.codewars.com/kata/551b4501ac0447318f0009cd/train/javascript
+function booleanToString(b){
+    var str = "";
+    str = str + b;
+    return str;
+}
