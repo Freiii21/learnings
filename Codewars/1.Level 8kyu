@@ -186,3 +186,25 @@ class SmallestIntegerFinder {
         return d;
     }
 }
+
+//19.Grasshopper - Summation
+//https://www.codewars.com/kata/55d24f55d7dd296eb9000030/train/javascript
+var summation = function (num) {
+    var n = 0;
+    for(i=0;i<=num;i++){
+        n += i;
+    }
+    return n;
+}
+
+//20.Remove String Spaces
+//https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript
+function noSpace(x){
+    var n = "";
+    for(i=0;i<x.length;i++){
+        if(x[i] != " "){
+            n += x[i];
+        }
+    }
+    return n;
+}
