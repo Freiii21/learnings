@@ -160,3 +160,29 @@ function repeatStr (n, s) {
     }
     return t;
 }
+
+//17.Remove First and Last Character
+//https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/javascript
+function removeChar(str){
+    var n = "";
+    for(i=0;i<str.length;i++){
+        if(i>0 && i<str.length-1){
+            n += str[i];
+        }
+    }
+    return n;
+};
+
+//18.Find the smallest integer in the array
+//https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        var d = args[0];
+        for (var i=1;i<args.length;i++){
+            if(args[i]<d){
+                d=args[i];
+            }
+        }
+        return d;
+    }
+}
