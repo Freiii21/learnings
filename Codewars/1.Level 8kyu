@@ -74,3 +74,23 @@ function booleanToString(b){
     str = str + b;
     return str;
 }
+
+//9.Multiplication table for number
+//https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce/train/javascript
+function multiTable(number) {
+    var r = "";
+    for (i = 1; i<11; i++){
+        if (i < 10){
+            r += i+" * "+number+" = "+(number*i)+"\n";
+        } else {
+            r += i+" * "+number+" = "+(number*i);
+        }
+    }
+    return r;
+}
+
+//10.Opposite number
+https://www.codewars.com/kata/56dec885c54a926dcd001095/train/javascript
+    function opposite(number) {
+        return -number;
+    }
