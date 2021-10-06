@@ -238,3 +238,27 @@ function countSheeps(arrayOfSheep) {
     }
     return c;
 }
+
+//23.Keep Hydrated!
+//https://www.codewars.com/kata/582cb0224e56e068d800003c/train/javascript
+function litres(time) {
+    console.log(time);
+    return Math.floor(time/2);
+}
+
+//24.Basic Mathematical Operations
+//https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/javascript
+function basicOp(operation, value1, value2)
+{
+    var r = 0;
+    if (operation == '+'){
+        r = value1 + value2;
+    } else if (operation == '-'){
+        r = value1 - value2;
+    } else if (operation == '*'){
+        r = value1 * value2;
+    } else if (operation == "/"){
+        r = value1 / value2;
+    }
+    return r;
+}
