@@ -94,3 +94,27 @@ https://www.codewars.com/kata/56dec885c54a926dcd001095/train/javascript
     function opposite(number) {
         return -number;
     }
+
+//11.Sum of positive
+//https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript
+function positiveSum(arr) {
+    var s = 0;
+    for(i=0;i<arr.length;i++){
+        if(arr[i]>0){
+            s += arr[i];
+        }
+    }
+    return s;
+}
+
+//12.Convert boolean values to strings 'Yes' or 'No'.
+//https://www.codewars.com/kata/53369039d7ab3ac506000467/train/javascript
+function boolToWord( bool ){
+    var r = "";
+    if (bool){
+        r = "Yes";
+    } else {
+        r = "No";
+    }
+    return r;
+}
