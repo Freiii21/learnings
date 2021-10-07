@@ -358,3 +358,39 @@ function getAverage(marks){
 function doubleInteger(i) {
     return i*2;
 }
+
+//35.Invert values
+//https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript
+function invert(array) {
+    for(i=0;i<array.length;i++){
+        if(array[i] >= 0){
+            array[i] = -array[i];
+        } else if(array[i] < 0){
+            array[i] *= -1;
+        }
+    }
+    return array;
+}
+
+//36.Count of positives / sum of negatives
+//https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript
+function countPositivesSumNegatives(input) {
+    console.log(input);
+    var tmp = [];
+    var po = 0;
+    var ne = 0;
+    if(input === undefined || input === null || input.length == 0){
+        return tmp;
+    } else {
+        for(i=0;i<input.length;i++){
+            if(input[i]>0){
+                po += 1;
+            } else {
+                ne += input[i];
+            }
+        }
+    }
+    tmp[0] = po;
+    tmp[1] = ne;
+    return tmp;
+}
