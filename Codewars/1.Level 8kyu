@@ -295,3 +295,26 @@ function digitize(n) {
 function greet(name){
     return "Hello, "+name+" how are you doing today?";
 }
+
+//29.Abbreviate a Two Word Name
+//https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript
+function abbrevName(name){
+    var a = name[0]+".";
+    var b = "";
+    console.log(a);
+    for(i=0;i<name.length;i++){
+        if(name[i] == " "){
+            b = a+name[i+1];
+        }
+    }
+    return b.toUpperCase();
+}
+
+//30.Jenny's secret message
+//https://www.codewars.com/kata/55225023e1be1ec8bc000390/train/javascript
+function greet(name){
+    if(name === "Johnny"){
+        return "Hello, my love!";
+    }
+    return "Hello, " + name + "!";
+}
