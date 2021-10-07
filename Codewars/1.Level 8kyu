@@ -318,3 +318,25 @@ function greet(name){
     }
     return "Hello, " + name + "!";
 }
+
+//31.A Needle in the Haystack
+//https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/train/javascript
+function findNeedle(haystack) {
+    var nn = 0;
+    for (i=0;i<haystack.length;i++){
+        if(haystack[i] === "needle"){
+            nn = haystack.indexOf(haystack[i]);
+        }
+    }
+    return "found the needle at position "+nn;
+}
+
+//32.Beginner - Lost Without a Map
+//https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+function maps(x){
+    var xx = [];
+    for(i=0;i<x.length;i++){
+        xx[i] = x[i]*2;
+    }
+    return xx;
+}
