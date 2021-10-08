@@ -394,3 +394,30 @@ function countPositivesSumNegatives(input) {
     tmp[1] = ne;
     return tmp;
 }
+
+//37.Beginner Series #2 Clock
+//https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+function past(h, m, s){
+    var sum = 0;
+    if (s != 0){
+        s *= 1000;
+    }
+    if (m != 0){
+        m *= 60 * 1000;
+    }
+    if (h != 0){
+        h *= 60 * 60 * 1000;
+    }
+    sum = s + m + h;
+    return sum;
+}
+
+//38.MakeUpperCase
+//https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7/train/javascript
+function makeUpperCase(str) {
+    var nv = "";
+    for(i=0;i<str.length;i++){
+        nv += str[i].toUpperCase();
+    }
+    return nv;
+}
