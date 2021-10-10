@@ -446,3 +446,32 @@ function find_average(array) {
     return num/len;
 }
 
+//41.Multiply
+//https://www.codewars.com/kata/50654ddff44f800200000004/train/javascript
+function multiply(a, b){
+    return a * b;
+}
+
+//42.Count the Monkeys!
+//https://www.codewars.com/kata/56f69d9f9400f508fb000ba7/train/javascript
+function monkeyCount(n) {
+    let array = [];
+    for(i=0;i<n;i++){
+        array.push(i+1);
+    }
+    return array;
+}
+
+//43.Fake Binary
+//https://www.codewars.com/kata/57eae65a4321032ce000002d/train/javascript
+function fakeBin(x){
+    let newValue = "";
+    for(i=0;i<x.length;i++){
+        if(x[i] < 5){
+            newValue += 0;
+        } else {
+            newValue += 1;
+        }
+    }
+    return newValue;
+}
