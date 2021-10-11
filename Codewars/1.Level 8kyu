@@ -475,3 +475,28 @@ function fakeBin(x){
     }
     return newValue;
 }
+
+//44.Sum Arrays
+//https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/javascript
+// Sum Numbers
+function sum (numbers) {
+    if (numbers != undefined) {
+        let s = 0;
+        for(let i=0; i<numbers.length;i++){
+            s += numbers[i];
+        }
+        return s;
+    }
+    return 0;
+};
+
+//45.You only need one - Beginner
+//https://www.codewars.com/kata/57cc975ed542d3148f00015b/train/javascript
+function check(a, x) {
+    for(let i=0; i<a.length;i++){
+        if(a[i] === x){
+            return true;
+        }
+    }
+    return false;
+}
