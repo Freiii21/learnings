@@ -1,4 +1,4 @@
-//1.Testing Objects for Properties
+//1.#89 Testing Objects for Properties
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/testing-objects-for-properties
 function checkObj(obj, checkProp) {
     // Only change code below this line
@@ -10,7 +10,7 @@ function checkObj(obj, checkProp) {
     // Only change code above this line
 }
 
-//2.Manipulating Complex Objects
+//2.#90 Manipulating Complex Objects
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulating-complex-objects
 var myMusic = [
     {
@@ -37,7 +37,7 @@ var myMusic = [
     }
 ];
 
-//3.Accessing Nested Objects
+//3.#91 Accessing Nested Objects
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/accessing-nested-objects
 var myStorage = {
     "car": {
@@ -53,7 +53,7 @@ var myStorage = {
 
 var gloveBoxContents = myStorage.car.inside["glove box"];
 
-//4.Accessing Nested Arrays
+//4.#92 Accessing Nested Arrays
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/accessing-nested-arrays
 var myPlants = [
     {
@@ -76,7 +76,7 @@ var myPlants = [
 
 var secondTree = myPlants[1].list[1];
 
-//5.Record Collection
+//5.#93 Record Collection
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/record-collection
 // Setup
 var recordCollection = {
@@ -114,7 +114,7 @@ function updateRecords(records, id, prop, value) {
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
-//6.Iterate with JavaScript While Loops
+//6.#94 Iterate with JavaScript While Loops
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-while-loops
 // Setup
 var myArray = [];
@@ -124,4 +124,24 @@ var i = 5;
 while(i>=0){
     myArray.push(i);
     i--;
+}
+
+//7.#95 Iterate with JavaScript For Loops
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-for-loops
+// Setup
+var myArray = [];
+
+// Only change code below this line
+for(let i=1; i<=5;i++){
+    myArray.push(i);
+}
+
+//8.#96 Iterate Odd Numbers With a For Loop
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-odd-numbers-with-a-for-loop
+// Setup
+var myArray = [];
+
+// Only change code below this line
+for(let i=1;i<=9;i+=2){
+    myArray.push(i);
 }
