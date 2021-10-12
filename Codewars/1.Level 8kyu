@@ -500,3 +500,26 @@ function check(a, x) {
     }
     return false;
 }
+
+//46.Array plus array
+//https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
+function arrayPlusArray(arr1, arr2) {
+    let sum = 0;
+    for (let i=0; i< arr1.length; i++){
+        sum += arr1[i];
+    }
+    for (let i=0; i< arr2.length; i++){
+        sum += arr2[i];
+    }
+    return sum; //something went wrong
+}
+
+//47.Are You Playing Banjo?
+//https://www.codewars.com/kata/53af2b8861023f1d88000832/train/javascript
+function areYouPlayingBanjo(name) {
+    let f = name[0];
+    if (f === 'R' || f === 'r'){
+        return name+" plays banjo";
+    }
+    return name + " does not play banjo";
+}
