@@ -557,3 +557,22 @@ function points(games) {
     console.log(games)
     return count;
 }
+
+//50.Reversed sequence
+//https://www.codewars.com/kata/5a00e05cc374cb34d100000d/train/javascript
+const reverseSeq = n => {
+    let array = [];
+    for (let i=n; i>0; i--){
+        array.push(i)
+    }
+    return array;
+};
+
+//51.Do I get a bonus?
+//https://www.codewars.com/kata/56f6ad906b88de513f000d96/train/javascript
+function bonusTime(salary, bonus) {
+    if (bonus){
+        salary *= 10;
+    }
+    return "\u00A3"+salary;
+}
