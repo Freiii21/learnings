@@ -595,3 +595,40 @@ function paperwork(n, m) {
     }
     return n*m;
 }
+
+//54.Find the first non-consecutive number
+//https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/javascript
+function firstNonConsecutive (arr) {
+    console.log(arr);
+    if (arr === [] || arr.length === 1){
+        return null;
+    }
+    for(let i=0; i<arr.length-1; i++){
+        if (arr[i+1] - arr[i] !== 1){
+            return arr[i+1]
+        }
+    }
+    return null;
+}
+
+//55.Find Maximum and Minimum Values of a List
+//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+var min = function(list){
+    let mi = list[0];
+    for (let i=1; i < list.length; i++){
+        if(mi > list[i]){
+            mi = list[i];
+        }
+    }
+    return mi;
+}
+
+var max = function(list){
+    let ma = list[0];
+    for (let i=1; i < list.length; i++){
+        if(ma < list[i]){
+            ma = list[i];
+        }
+    }
+    return ma;
+}
