@@ -646,3 +646,39 @@ function DNAtoRNA(dna) {
     }
     return result;
 }
+
+//57.How good are you really?
+//https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
+function betterThanAverage(classPoints, yourPoints) {
+    let av = 0;
+    classPoints.push(yourPoints);
+    for(let i=0; i<classPoints.length;i++){
+        av += classPoints[i];
+    }
+    av /= classPoints.length;
+    if (av >= yourPoints){
+        return false;
+    }
+    return true;
+}
+
+//58.Rock Paper Scissors!
+//https://www.codewars.com/kata/5672a98bdbdd995fad00000f/train/javascript
+const rps = (p1, p2) => {
+    if (p1 === p2){
+        return 'Draw!'
+    } else if ((p1 === "rock" && p2 === 'scissors') || (p1 === "scissors" && p2 === 'paper') || (p1 === "paper" && p2 === 'rock')){
+        return 'Player 1 won!'
+    }
+    return 'Player 2 won!'
+};
+
+//59.Count by X
+//https://www.codewars.com/kata/5513795bd3fafb56c200049e/train/javascript
+function countBy(x, n) {
+    let z = [];
+    for(let i = 1; i<n+1; i++){
+        z.push(x*i);
+    }
+    return z;
+}
