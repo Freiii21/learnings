@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //100 lines from 1 to 100
+        /*for(let i = 1; i<=100; i++){
+            document.write(i+'<br>');
+        }*/
+
+        //100 lines from 100 to 1
+/*        for(let i = 100; i>=1; i--){
+            document.write(i+'<br>');
+        }*/
+
+        //Lines from 1 to 100 with only even numbers
+/*        for(let i = 2; i<=100; i+=2){
+            document.write(i+'<br>');
+        }*/
+
+        //Fill in an array with X values using a loop
+/*        let array = [];
+        for (let i=0; i<10; i++){
+            array.push("X")
+        }
+        console.log(array);*/
+
+        //Fill in an array with numbers from 1 to 10 using a loop
+/*        let array = [];
+        for (let i=1; i<=10; i++){
+            array.push(i)
+        }
+        console.log(array);*/
+
+        //Fill in an array with 10 random numbers like 0,23 or 0.66 using a loop
+/*        let array = [];
+        for (let i=1; i<=10; i++){
+            array.push(Math.random().toFixed(2))
+        }
+        console.log(array);*/
+
+        //Fill in an array with 10 random whole numbers from 1 to 10 using a loop
+        let array  = [];
+        for (let i = 0; i < 10; i++) {
+            array.push(Math.floor(Math.random() * 10));
+        }
+        console.log(array);
+    </script>
+</body>
+</html>
