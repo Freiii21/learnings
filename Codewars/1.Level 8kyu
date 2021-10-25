@@ -682,3 +682,29 @@ function countBy(x, n) {
     }
     return z;
 }
+
+//60.Sum Mixed Array
+//https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript
+function sumMix(x){
+    let sum = 0;
+    for (let i = 0; i<x.length; i++){
+        sum += Number(x[i]);
+    }
+    return sum;
+}
+
+//61.Opposites Attract
+//https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
+function lovefunc(flower1, flower2){
+    console.log(flower1+" "+flower2+" "+flower1%2+" "+!flower2%2);
+    if (flower1%2 !== flower2%2){
+        return true
+    }
+    return false
+}
+
+//62.Will you make it?
+//https://www.codewars.com/kata/5861d28f124b35723e00005e/train/javascript
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return mpg*fuelLeft >= distanceToPump;
+};
