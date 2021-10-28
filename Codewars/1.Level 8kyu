@@ -724,3 +724,9 @@ var countSheep = function (num){
 function feast(beast, dish) {
     return beast[0]+beast[beast.length-1] === dish[0]+dish[dish.length-1]
 }
+
+//65.Remove exclamation marks
+//https://www.codewars.com/kata/57a0885cbb9944e24c00008e/train/javascript
+function removeExclamationMarks(s) {
+    return s.replace(/!/g,"");
+}
