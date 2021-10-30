@@ -756,3 +756,8 @@ function greet(language) {
     return langs.hasOwnProperty(language) ? langs[language] : langs.english
 }
 
+//67.Beginner Series #4 Cockroach
+//https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6/train/javascript
+function cockroachSpeed(s) {
+    return s === 0 ? 0 : Math.floor(s*27.77777777778);
+}
