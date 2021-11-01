@@ -289,3 +289,30 @@ function convertToInteger(str) {
 }
 
 convertToInteger("56");
+
+
+//18.Use the parseInt Function with a Radix
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-the-parseint-function-with-a-radix
+function convertToInteger(str) {
+    return parseInt(str,2);
+}
+
+convertToInteger("10011");
+
+//19.Use the Conditional (Ternary) Operator
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-the-conditional-ternary-operator
+function checkEqual(a, b) {
+    return a === b ? "Equal" : "Not Equal"
+}
+
+checkEqual(1, 2);
+
+//20.Use Multiple Conditional (Ternary) Operators
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators
+function checkSign(num) {
+    return num === 0 ? "zero"
+        : num < 0 ? "negative"
+            : "positive"
+}
+
+checkSign(10);
