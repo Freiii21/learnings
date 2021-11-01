@@ -783,3 +783,16 @@ function doubleChar(str) {
     }
     return res;
 }
+
+//71.Grasshopper - Personalized Message
+//https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript
+function greet (name, owner) {
+    return name === owner ? "Hello boss" : "Hello guest";
+}
+
+//72.Sentence Smash
+//https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/javascript
+function smash (words) {
+    "use strict";
+    return words.join(" ")
+};
