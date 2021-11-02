@@ -796,3 +796,15 @@ function smash (words) {
     "use strict";
     return words.join(" ")
 };
+
+//73.Will there be enough space?
+//https://www.codewars.com/kata/5875b200d520904a04000003/train/javascript
+function enough(cap, on, wait) {
+    return cap-on >= wait ? 0 : Math.abs(cap-on-wait)
+}
+
+//74.L1: Set Alarm
+//https://www.codewars.com/kata/568dcc3c7f12767a62000038/train/javascript
+function setAlarm(employed, vacation){
+    return employed && !vacation
+}
