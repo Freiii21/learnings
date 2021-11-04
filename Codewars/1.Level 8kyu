@@ -808,3 +808,23 @@ function enough(cap, on, wait) {
 function setAlarm(employed, vacation){
     return employed && !vacation
 }
+
+//75.Transportation on vacation
+//https://www.codewars.com/kata/568d0dd208ee69389d000016/train/javascript
+function rentalCarCost(d) {
+    return d<3 ? d*40
+        : d>=3 && d<7 ? d*40-20
+            : d*40-50
+}
+
+//76.Removing Elements
+//https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript
+function removeEveryOther(arr){
+    let res = [];
+    for (let i=0; i<arr.length;i++){
+        if (i%2 === 0){
+            res.push(arr[i]);
+        }
+    }
+    return res;
+}
