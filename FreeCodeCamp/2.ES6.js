@@ -19,3 +19,25 @@ function editInPlace() {
     return s;
 }
 editInPlace();
+
+
+//3.Prevent Object Mutation
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/prevent-object-mutation
+function freezeObj() {
+    const MATH_CONSTANTS = {
+        PI: 3.14
+    };
+    Object.freeze(MATH_CONSTANTS);
+
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch(ex) {
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+
+//4.Use Arrow Functions to Write Concise Anonymous Functions
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-arrow-functions-to-write-concise-anonymous-functions
+const magic = () => new Date();
