@@ -50,3 +50,16 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 //6.Set Default Parameters for Your Functions
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/set-default-parameters-for-your-functions
 const increment = (number, value = 1) => number + value;
+
+//7.Use the Rest Parameter with Function Parameters
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-the-rest-parameter-with-function-parameters
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+}
+
+//8.Use the Spread Operator to Evaluate Arrays In-Place
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-the-spread-operator-to-evaluate-arrays-in-place
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+arr2 = [...arr1];
+console.log(arr2);
