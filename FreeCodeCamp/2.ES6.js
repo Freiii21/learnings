@@ -41,3 +41,12 @@ const PI = freezeObj();
 //4.Use Arrow Functions to Write Concise Anonymous Functions
 //https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-arrow-functions-to-write-concise-anonymous-functions
 const magic = () => new Date();
+
+//5.Write Arrow Functions with Parameters
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/write-arrow-functions-with-parameters
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1, 2], [3, 4, 5]));
+
+//6.Set Default Parameters for Your Functions
+//https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/set-default-parameters-for-your-functions
+const increment = (number, value = 1) => number + value;
