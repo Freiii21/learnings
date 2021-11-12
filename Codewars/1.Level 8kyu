@@ -868,3 +868,44 @@ const quarterOf = (month) => {
             : month <=9 ? 3
                 : 4
 }
+
+//81.Correct the mistakes of the character recognition software
+//https://www.codewars.com/kata/577bd026df78c19bca0002c0/train/javascript
+function correct(string)
+{
+    return string.split('').map(c => c === '5' ? "S" : c === '0' ? 'O' : c === '1' ? 'I' : c).join('');
+}
+
+//82.Get Planet Name By ID
+//https://www.codewars.com/kata/515e188a311df01cba000003/train/javascript
+function getPlanetName(id){
+    var name;
+    switch(id){
+        case 1:
+            name = 'Mercury'
+            break;
+        case 2:
+            name = 'Venus'
+            break;
+        case 3:
+            name = 'Earth'
+            break;
+        case 4:
+            name = 'Mars'
+            break;
+        case 5:
+            name = 'Jupiter'
+            break;
+        case 6:
+            name = 'Saturn'
+            break;
+        case 7:
+            name = 'Uranus'
+            break;
+        case 8:
+            name = 'Neptune'
+            break;
+    }
+
+    return name;
+}
