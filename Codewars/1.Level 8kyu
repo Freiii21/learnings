@@ -853,3 +853,18 @@ function getGrade (s1, s2, s3) {
         return "F";
     }
 }
+
+//79.Find numbers which are divisible by given number
+//https://www.codewars.com/kata/55edaba99da3a9c84000003b/train/javascript
+function divisibleBy(numbers, divisor){
+    return numbers.filter(n => n%divisor === 0);
+}
+
+//80.Quarter of the year
+//https://www.codewars.com/kata/5ce9c1000bab0b001134f5af/train/javascript
+const quarterOf = (month) => {
+    return month <= 3 ? 1
+        : month <=6 ? 2
+            : month <=9 ? 3
+                : 4
+}
