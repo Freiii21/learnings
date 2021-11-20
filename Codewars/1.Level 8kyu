@@ -923,3 +923,21 @@ function updateLight(current) {
         : current === 'yellow' ? 'red'
             : 'green'
 }
+
+//85.Keep up the hoop
+//https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/javascript
+function hoopCount (n) {
+    return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it"
+}
+
+//86.All Star Code Challenge #18
+//https://www.codewars.com/kata/5865918c6b569962950002a1/train/javascript
+function strCount(str, letter){
+    let count = 0;
+    for (let i = 0; i<str.length; i++){
+        if(str[i] === letter){
+            count++;
+        }
+    }
+    return count;
+}
