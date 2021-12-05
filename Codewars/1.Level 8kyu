@@ -976,3 +976,58 @@ function switchItUp(number){
             return 'unknown'
     }
 }
+
+//89.Squash the bugs
+//https://www.codewars.com/kata/56f173a35b91399a05000cb7/train/javascript
+function findLongest(str) {
+
+    var spl = str.split(" ");
+    var longest = 0;
+
+    for (var i = 0; i < spl.length; i++) {
+        if (spl[i].length > longest) {
+            longest = spl[i].length
+        }
+    }
+    return longest;
+}
+
+//90.Parse nice int from char problem
+//https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1/train/javascript
+function getAge(inputString){
+    return Number(inputString.split(" ")[0])
+}
+
+//91.Unfinished Loop - Bug Fixing #1
+//https://www.codewars.com/kata/55c28f7304e3eaebef0000da/train/javascript
+function createArray(number){
+    var newArray = [];
+
+    for(var counter = 1; counter <= number; counter++){
+        newArray.push(counter);
+    }
+
+    return newArray;
+}
+
+//92.I love you, a little , a lot, passionately ... not at all
+//https://www.codewars.com/kata/57f24e6a18e9fad8eb000296/train/javascript
+function howMuchILoveYou(nbPetals) {
+    while (nbPetals > 6){
+        nbPetals -= 6
+    }
+    switch(nbPetals){
+        case 1:
+            return "I love you";
+        case 2:
+            return "a little";
+        case 3:
+            return "a lot";
+        case 4:
+            return "passionately";
+        case 5:
+            return "madly";
+        case 6:
+            return "not at all";
+    }
+}
