@@ -1031,3 +1031,23 @@ function howMuchILoveYou(nbPetals) {
             return "not at all";
     }
 }
+
+//93.Difference of Volumes of Cuboids
+//https://www.codewars.com/kata/58cb43f4256836ed95000f97/train/javascript
+const findDifference = (a, b) => Math.abs(a.reduce((acc, num) => acc*num) - b.reduce((acc, num) => acc*num));
+
+//94.Stringy Strings
+//https://www.codewars.com/kata/563b74ddd19a3ad462000054/train/javascript
+function stringy(size) {
+    console.log(size);
+    let res = '';
+    for (let i = 0; i<size; i++){
+        if (i%2 === 0){
+            res += "1";
+        } else {
+            res += "0";
+        }
+    }
+    console.log(res);
+    return res;
+}
