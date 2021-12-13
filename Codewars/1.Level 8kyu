@@ -1051,3 +1051,45 @@ function stringy(size) {
     console.log(res);
     return res;
 }
+
+//95.Cat years, Dog years
+//https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/javascript
+var humanYearsCatYearsDogYears = function(humanYears) {
+    switch (humanYears){
+        case 1:
+            return [1,15,15];
+        case 2:
+            return [2,24,24];
+        default:
+            let cat = 24;
+            let dog = 24;
+            for (let i = 2; i<humanYears; i++){
+                cat += 4;
+                dog += 5;
+            }
+            return [humanYears,cat,dog];
+    }
+}
+
+//96.Filter out the geese
+//https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/train/javascript
+function gooseFilter (birds) {
+    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    return birds.filter(b => geese.find(g => g === b) === undefined)
+};
+
+
+//97.Grasshopper - If/else syntax debug
+//https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript
+function checkAlive (health) {
+    if (health <= 0) {
+        return false;
+    }
+    return true;
+}
+
+//98.Sum The Strings
+//https://www.codewars.com/kata/5966e33c4e686b508700002d/train/javascript
+function sumStr(a,b) {
+    return ((Number(a)+Number(b)).toString())
+}
