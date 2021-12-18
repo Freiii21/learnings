@@ -1093,3 +1093,17 @@ function checkAlive (health) {
 function sumStr(a,b) {
     return ((Number(a)+Number(b)).toString())
 }
+
+//99.Generate range of integers
+//https://www.codewars.com/kata/55eca815d0d20962e1000106/train/javascript
+function generateRange(min, max, step){
+    let res = [];
+    for (let i = min; i<=max; i += step){
+        res.push(i)
+    }
+    return res;
+}
+
+//100.Super Duper Easy
+//https://www.codewars.com/kata/55a5bfaa756cfede78000026/train/javascript
+const problem = (x) => Number.isFinite(x) ? x*50+6 : "Error";
