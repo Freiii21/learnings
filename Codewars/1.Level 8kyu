@@ -1107,3 +1107,21 @@ function generateRange(min, max, step){
 //100.Super Duper Easy
 //https://www.codewars.com/kata/55a5bfaa756cfede78000026/train/javascript
 const problem = (x) => Number.isFinite(x) ? x*50+6 : "Error";
+
+//101.Grasshopper - Check for factor
+//https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/javascript
+function checkForFactor (base, factor) {
+    return base % factor < 1;
+}
+
+//102.What's the real floor?
+//https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
+function getRealFloor(n) {
+    if (n <= 0){
+        return n;
+    } else if (n > 0 & n <13){
+        return n-1;
+    } else {
+        return n-2;
+    }
+}
