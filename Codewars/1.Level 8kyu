@@ -1125,3 +1125,18 @@ function getRealFloor(n) {
         return n-2;
     }
 }
+
+//103.Grasshopper - Messi goals function
+//https://www.codewars.com/kata/55f73be6e12baaa5900000d4/train/javascript
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals+copaDelReyGoals+championsLeagueGoals
+}
+
+//104.Student's Final Grade
+//https://www.codewars.com/kata/5ad0d8356165e63c140014d4/train/javascript
+function finalGrade (exam, projects) {
+    return (exam > 90 | projects > 10) ? 100
+        : (exam > 75 & projects >= 5) ? 90
+            : (exam > 50 & projects >= 2) ? 75
+                : 0
+}
