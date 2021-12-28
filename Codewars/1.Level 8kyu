@@ -1140,3 +1140,20 @@ function finalGrade (exam, projects) {
             : (exam > 50 & projects >= 2) ? 75
                 : 0
 }
+
+//105.Function 3 - multiplying two numbers
+//https://www.codewars.com/kata/523b66342d0c301ae400003b/train/javascript
+function multiply (a, b) {
+    return a*b;
+}
+
+//106.Powers of 2
+//https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
+function powersOfTwo(n){
+    console.log(n);
+    let arr = [];
+    for (let i = 0; i<=n; i++){
+        arr.push(2**i)
+    }
+    return arr;
+}
