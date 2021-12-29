@@ -1157,3 +1157,15 @@ function powersOfTwo(n){
     }
     return arr;
 }
+
+//107.Training JS #7: if..else and ternary operator
+//https://www.codewars.com/kata/57202aefe8d6c514300001fd/train/javascript
+function saleHotdogs(n){
+    return n < 5 ? n*100 : n >=5 & n < 10 ? n*95 : n*90
+}
+
+//108.Grasshopper - Terminal game move function
+//https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/javascript
+function move (position, roll) {
+    return position+roll*2;
+}
