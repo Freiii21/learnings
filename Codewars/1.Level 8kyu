@@ -1169,3 +1169,20 @@ function saleHotdogs(n){
 function move (position, roll) {
     return position+roll*2;
 }
+
+//109.Well of Ideas - Easy Version
+//https://www.codewars.com/kata/57f222ce69e09c3630000212/train/javascript
+function well(x){
+    const res = x.filter(x => x === 'good');
+    return res.length > 2 ? "I smell a series!"
+        : res.length > 0 ? "Publish!"
+            : 'Fail!'
+}
+
+//110.Volume of a Cuboid
+//https://www.codewars.com/kata/58261acb22be6e2ed800003a/train/javascript
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height;
+    }
+}
