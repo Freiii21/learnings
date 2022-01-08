@@ -1199,3 +1199,40 @@ function testEven(n) {
     return n%2 === 0;
 }
 
+//113.https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript
+//https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/javascript
+function isPalindrome(x) {
+    const string = x.toLowerCase();
+    const a = Math.floor(x.length/2);
+    const b = Math.ceil(x.length/2);
+
+    if(a === 0){
+        return true;
+    } else {
+        let arr1 = [];
+        let arr2 = [];
+
+        for(let i = 0; i<a; i++){
+            arr1.push(string[i])
+        }
+
+        for(let j = x.length-1; j>=b; j--){
+            arr2.push(string[j])
+        }
+
+        res = 0;
+        for(let g = 0; g<arr1.length;g++){
+            if(arr1[g] !== arr2[g]){
+                res += 1;
+            }
+        }
+
+        return res === 0;
+    }
+}
+
+//114.Basic variable assignment
+//https://www.codewars.com/kata/50ee6b0bdeab583673000025/train/javascript
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
