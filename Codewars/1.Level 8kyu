@@ -1252,3 +1252,23 @@ function tripleTrouble(one, two, three){
 function combat(health, damage) {
     return health > damage ? health - damage : 0;
 }
+
+//117.Filling an array (part 1)
+// https://www.codewars.com/kata/571d42206414b103dc0006a1/train/javascript
+const arr = N => {
+    let res = [];
+    for(let i= 0; i<N;i++){
+        res.push(i)
+    }
+    return res;
+};
+
+//118.101 Dalmatians - squash the bugs, not the dogs!
+//https://www.codewars.com/kata/56f6919a6b88de18ff000b36/train/javascript
+function howManyDalmatians(number){
+    console.log(number);
+    const dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+    var respond = number <= 10 ? dogs[0] : number <= 50 ? dogs[1] : number == 101 ? dogs[3] : dogs[2];
+    console.log(respond);
+    return respond
+}
