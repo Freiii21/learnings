@@ -1272,3 +1272,24 @@ function howManyDalmatians(number){
     console.log(respond);
     return respond
 }
+
+//119.What is between?
+//https://www.codewars.com/kata/55ecd718f46fba02e5000029/train/javascript
+function between(a, b) {
+    let res = [];
+    for (let i=a; i<=b;i++){
+        res.push(i)
+    }
+    return res;
+}
+
+//120.Hello, Name or World!
+//https://www.codewars.com/kata/57e3f79c9cb119374600046b/train/javascript
+function hello(name) {
+    if (name===undefined || name===""){
+        return "Hello, World!";
+    }
+    let res = name.toLowerCase();
+    let res2 = res.charAt(0).toUpperCase()+ res.slice(1)
+    return `Hello, ${res2}!`;
+}
