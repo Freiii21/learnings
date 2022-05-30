@@ -1293,3 +1293,26 @@ function hello(name) {
     let res2 = res.charAt(0).toUpperCase()+ res.slice(1)
     return `Hello, ${res2}!`;
 }
+
+//125.Lario and Muigi Pipe Problem
+//https://www.codewars.com/kata/56b29582461215098d00000f/train/javascript
+function pipeFix(numbers){
+    numbers.sort(function(a, b) {
+        return a - b;
+    });
+
+    let res = [];
+    for (let i=numbers[0];i<=numbers[numbers.length-1];i++){
+        res.push(i);
+    }
+    return res;
+}
+
+//126.Exclamation marks series #1: Remove an exclamation mark from the end of string
+//https://www.codewars.com/kata/57fae964d80daa229d000126/train/javascript
+function remove (string) {
+    if (string[string.length-1] ==='!') {
+        return string.slice(0,-1)
+    }
+    return string;
+}
