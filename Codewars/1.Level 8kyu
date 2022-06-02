@@ -1340,3 +1340,34 @@ function mouthSize(animal) {
 function hexToDec(hexString){
     return parseInt(hexString, 16)
 }
+
+//131.Vowel remover
+//https://www.codewars.com/kata/5547929140907378f9000039/train/javascript
+function shortcut (string) {
+    res = string.replace( /[aeiou]/ig, '' )
+    return res;
+}
+
+//132.Name Shuffler
+//https://www.codewars.com/kata/559ac78160f0be07c200005a/train/javascript
+function nameShuffler(str){
+    console.log(str)
+
+    const userFirstName = [];
+    const userLastName = [];
+
+    let activeVariable = userFirstName;
+
+    for(let i = 0; i < str.length; i++){
+        if(str[i] !== " "){
+            activeVariable.push(str[i])
+        } else {
+            activeVariable = userLastName;
+        }
+    }
+
+    makeLastNameString = userLastName.join("");
+    makeFirstNameString = userFirstName.join("");
+
+    return (makeLastNameString+" "+makeFirstNameString)
+}
