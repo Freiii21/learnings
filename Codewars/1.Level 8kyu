@@ -1371,3 +1371,29 @@ function nameShuffler(str){
 
     return (makeLastNameString+" "+makeFirstNameString)
 }
+
+//133.Bin to Decimal
+//https://www.codewars.com/kata/57a5c31ce298a7e6b7000334/train/javascript
+function binToDec(bin){
+    return parseInt(bin, 2);
+}
+
+//134.No zeros for heros
+//https://www.codewars.com/kata/570a6a46455d08ff8d001002/train/javascript
+function noBoringZeros(n) {
+    let initialValue = n.toString().split("");
+    let wasNotZeroNumber = false;
+    let res = [];
+
+    for (let i = initialValue.length - 1; i >= 0 ; i--) {
+        if(initialValue[i] !== "0" ){
+            wasNotZeroNumber = true;
+        }
+
+        if(wasNotZeroNumber){
+            res.unshift(initialValue[i])
+        }
+    }
+
+    return Number(res.join(""))
+}
