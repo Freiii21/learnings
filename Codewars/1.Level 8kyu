@@ -1414,3 +1414,34 @@ function mergeArrays(arr1, arr2) {
     return result.sort((a,b) => a-b);
 }
 
+//137.Grasshopper - Basic Function Fixer
+//https://www.codewars.com/kata/56200d610758762fb0000002/train/javascript
+function addFive(num) {
+    return num + 5;
+}
+
+//138.A wolf in sheep's clothing
+//https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15/train/javascript
+function warnTheSheep(queue) {
+    for (let i = queue.length-1; i >= 0; i--){
+        if(queue[queue.length-1] === "wolf"){
+            return "Pls go away and stop eating my sheep"
+        }
+
+        if(queue[i] === "wolf"){
+            return `Oi! Sheep number ${queue.length-i-1}! You are about to be eaten by a wolf!`
+        }
+    }
+}
+
+//139.FIXME: Replace all dots
+//https://www.codewars.com/kata/596c6eb85b0f515834000049/train/javascript
+const replaceDots = function(str) {
+    return str.replace(/\./g,'-');
+}
+
+//140.Plural
+//https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/javascript
+function plural(n) {
+    return n !== 1
+}
