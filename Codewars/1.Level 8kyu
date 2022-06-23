@@ -1538,3 +1538,71 @@ function stringClean(s){
 function toBinary(n){
     return Number(n.toString(2))
 }
+
+//151.Training JS #4: Basic data types--Array
+//https://www.codewars.com/kata/571effabb625ed9b0600107a/train/javascript
+function getLength(arr){
+    return arr.length
+}
+function getFirst(arr){
+    return arr[0]
+}
+function getLast(arr){
+    //return the last element of arr
+    return arr[arr.length-1]
+}
+function pushElement(arr){
+    let newArr = arr;
+    let el = 1;
+
+    newArr.push(el);
+    return newArr;
+}
+function popElement(arr){
+    let newArr = arr;
+
+    newArr.pop();
+    return newArr;
+}
+
+//152.Grasshopper - Function syntax debugging
+//https://www.codewars.com/kata/56dae9dc54c0acd29d00109a/train/javascript
+function main (verb, noun){
+    return verb + noun
+}
+
+//153.Find the position!
+//https://www.codewars.com/kata/5808e2006b65bff35500008f/train/javascript
+function position(letter){
+    return `Position of alphabet: ${letter.charCodeAt(0)-96}`
+}
+
+//154.Remove duplicates from list
+//Remove duplicates from list
+function distinct(a) {
+    return [...new Set(a)];
+}
+
+//155.Alan Partridge II - Apple Turnover
+//https://www.codewars.com/kata/580a094553bd9ec5d800007d/train/javascript
+function apple(x){
+    if (x ** 2 > 1000) {
+        return "It's hotter than the sun!!"
+    }
+    return "Help yourself to a honeycomb Yorkie for the glovebox."
+}
+
+//156.Multiple of index
+//https://www.codewars.com/kata/5a34b80155519e1a00000009/train/javascript
+function multipleOfIndex(array) {
+    let resultArr = [];
+
+    for (let i = 0; i < array.length; i++){
+        if (array[i] % i === 0){
+            resultArr.push(array[i])
+        }
+    }
+
+    return resultArr;
+}
+
