@@ -1445,3 +1445,66 @@ const replaceDots = function(str) {
 function plural(n) {
     return n !== 1
 }
+
+//141.SpeedCode #2 - Array Madness
+//https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1/train/javascript
+function arrayMadness(a, b) {
+    const result1 = a.reduce((total, element)=>{return total + element**2}, 0)
+    const result2 = b.reduce((total, element)=>{return total + element**3}, 0)
+
+    return result1 > result2;
+}
+
+//142.Reversing Words in a String
+//https://www.codewars.com/kata/57a55c8b72292d057b000594/train/javascript
+function reverse(string){
+    return string.split(" ").reverse().join(" ");
+}
+
+//143.Is this my tail?
+//https://www.codewars.com/kata/56f695399400f5d9ef000af5/train/javascript
+function correctTail(body, tail){
+    return body[body.length-1] === tail
+}
+
+//144.Training JS #2: Basic data types--Number
+//https://www.codewars.com/kata/571edd157e8954bab500032d/train/javascript
+var v1=50,v2=100,v3=150,v4=200,v5=2,v6=250
+function equal1(){
+    var a=v1
+    var b=v1
+    return a+b;
+}
+//Please refer to the example above to complete the following functions
+function equal2(){
+    var a=v3   //set number value to a
+    var b=v1   //set number value to b
+    return a-b;
+}
+function equal3(){
+    var a=v1   //set number value to a
+    var b=v5   //set number value to b
+    return a*b;
+}
+function equal4(){
+    var a=v4   //set number value to a
+    var b=v5   //set number value to b
+    return a/b;
+}
+function equal5(){
+    var a=v2   //set number value to a
+    var b=v3   //set number value to b
+    return a%b;
+}
+
+//145.Holiday VIII - Duty Free
+//https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/javascript
+function dutyFree(normPrice, discount, hol){
+    return Math.floor(hol / (normPrice * ( discount / 100 )));
+}
+
+//146.Dollars and Cents
+//https://www.codewars.com/kata/55902c5eaa8069a5b4000083/train/javascript
+function formatMoney(amount){
+    return `$${amount.toFixed(2)}`
+}
