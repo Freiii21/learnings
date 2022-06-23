@@ -1397,3 +1397,20 @@ function noBoringZeros(n) {
 
     return Number(res.join(""))
 }
+
+//135.Exclusive "or" (xor) Logical Operator
+//https://www.codewars.com/kata/56fa3c5ce4d45d2a52001b3c/train/javascript
+function xor(a, b) {
+    if (a === b){
+        return false
+    }
+    return a === true || b === true
+}
+
+//136.Merge two sorted arrays into one
+//https://www.codewars.com/kata/5899642f6e1b25935d000161/train/javascript
+function mergeArrays(arr1, arr2) {
+    let result = [...new Set([...arr1, ...arr2])];
+    return result.sort((a,b) => a-b);
+}
+
