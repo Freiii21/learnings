@@ -1508,3 +1508,33 @@ function dutyFree(normPrice, discount, hol){
 function formatMoney(amount){
     return `$${amount.toFixed(2)}`
 }
+
+//147.String Templates - Bug Fixing #5
+//https://www.codewars.com/kata/55c90cad4b0fe31a7200001f/train/javascript
+function buildString(...template){
+    return `I like ${template.join(', ')}!`;
+}
+
+//148.Pre-FizzBuzz Workout #1
+//https://www.codewars.com/kata/569e09850a8e371ab200000b/train/javascript
+function preFizz(n) {
+    let resultArray = [];
+
+    for (let i = n; i >=1; i--){
+        resultArray.unshift(i);
+    }
+
+    return resultArray;
+}
+
+//149.String cleaning
+//https://www.codewars.com/kata/57e1e61ba396b3727c000251/train/javascript
+function stringClean(s){
+    return s.replace(/[1234567890]/g, '')
+}
+
+//150.Convert to Binary
+//https://www.codewars.com/kata/59fca81a5712f9fa4700159a/train/javascript
+function toBinary(n){
+    return Number(n.toString(2))
+}
