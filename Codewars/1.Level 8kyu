@@ -1606,3 +1606,78 @@ function multipleOfIndex(array) {
     return resultArr;
 }
 
+//157.Surface Area and Volume of a Box
+//https://www.codewars.com/kata/565f5825379664a26b00007c/train/javascript
+function getSize(width, height, depth){
+    const area = (width * height * 2) + (width * depth * 2) + (height * depth * 2);
+    const volume = width * height * depth;
+
+    return [area, volume];
+}
+
+//158.Grasshopper - Messi Goals
+//https://www.codewars.com/kata/55ca77fa094a2af31f00002a/train/javascript
+const laLigaGoals = 43
+const championsLeagueGoals = 10
+const copaDelReyGoals = 5
+
+const totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+
+//159.Gravity Flip
+//https://www.codewars.com/kata/5f70c883e10f9e0001c89673/train/javascript
+const flip=(d, a)=>{
+    if (d === 'R'){
+        return a.sort((a, b)=> a-b)
+    }
+
+    if (d === 'L'){
+        return a.sort((a, b)=> a-b).reverse()
+    }
+}
+
+//160.L1: Bartender, drinks!
+//https://www.codewars.com/kata/568dc014440f03b13900001d/train/javascript
+function getDrinkByProfession(param){
+
+    switch (param.toLowerCase()){
+        case "jabroni": return "Patron Tequila";
+        case "school counselor": return "Anything with Alcohol";
+        case "programmer": return "Hipster Craft Beer";
+        case "bike gang member": return "Moonshine";
+        case "politician": return "Your tax dollars";
+        case "rapper": return "Cristal";
+        default: return "Beer";
+    }
+}
+
+//161.Fix your code before the garden dies!
+//https://www.codewars.com/kata/57158fb92ad763bb180004e7/train/javascript
+function rainAmount(mm){
+    if (mm < 40) {
+        return `You need to give your plant ${40 - mm}mm of water`
+    };
+
+    return "Your plant has had more than enough water for today!"
+}
+
+//162.How old will I be in 2099?
+//https://www.codewars.com/kata/5761a717780f8950ce001473/train/javascript
+function calculateAge(date1, date2) {
+    if(date1 - date2 === 0){
+        return "You were born this very year!"
+    }
+
+    if(date1 - date2 === 1){
+        return "You will be born in 1 year."
+    }
+
+    if(date1 - date2 > 1){
+        return `You will be born in ${date1 - date2} years.`
+    }
+
+    if(date2 - date1 === 1){
+        return "You are 1 year old."
+    }
+
+    return `You are ${date2 - date1} years old.`
+}
