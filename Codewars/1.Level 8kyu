@@ -1713,3 +1713,22 @@ function include(arr, item){
 function derive(coefficient,exponent) {
     return `${coefficient * exponent}x^${exponent - 1}`
 }
+
+//167.Add Length
+//https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/javascript
+function addLength(str) {
+    let result = str.split(" ")
+    for (let i = 0; i < result.length; i++){
+        result[i] = result[i] + " " + result[i].length
+    }
+
+    return result;
+}
+
+//168.Grasshopper - Array Mean
+//https://www.codewars.com/kata/55d277882e139d0b6000005d/train/javascript
+var findAverage = function (nums) {
+    const result = nums.reduce((acc, el) => acc + el, 0)
+
+    return result / nums.length;
+}
