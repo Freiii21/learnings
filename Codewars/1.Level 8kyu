@@ -1681,3 +1681,35 @@ function calculateAge(date1, date2) {
 
     return `You are ${date2 - date1} years old.`
 }
+
+//163.Determine offspring sex based on genes XX and XY chromosomes
+//https://www.codewars.com/kata/56530b444e831334c0000020/train/javascript
+function chromosomeCheck(sperm) {
+    if(sperm[1] === 'Y'){
+        return "Congratulations! You're going to have a son."
+    }
+
+    return "Congratulations! You're going to have a daughter."
+}
+
+//164.Palindrome Strings
+//https://www.codewars.com/kata/57a5015d72292ddeb8000b31/train/javascript
+function isPalindrome(line) {
+    if(typeof line === "number"){
+        line = line.toString()
+    }
+
+    return line === line.split("").reverse().join("");
+}
+
+//165.Enumerable Magic #3 - Does My List Include This?
+//https://www.codewars.com/kata/545991b4cbae2a5fda000158/train/javascript
+function include(arr, item){
+    return arr.includes(item)
+}
+
+//166.Take the Derivative
+//https://www.codewars.com/kata/5963c18ecb97be020b0000a2/train/javascript
+function derive(coefficient,exponent) {
+    return `${coefficient * exponent}x^${exponent - 1}`
+}
